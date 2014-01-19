@@ -94,7 +94,7 @@ _______________________________________________________________________________*
 
 
 
-#define MAX_LSAMS 100
+#define MAX_LSAMS 100 //Change this value to create more SAM launchers.
 
 #define SAM_POWER_LOW    0
 #define SAM_POWER_NORMAL 1
