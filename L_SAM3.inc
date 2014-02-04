@@ -251,7 +251,7 @@ public OnFilterScriptInit()
   		L_SAMMissileSAMID[i] = -1;
   		L_SAMMissileProgress[i] = -1;
  	}
- 	for(new i; i< MAX_PLAYERS; i++)
+ 	for(new i; i < GetMaxPlayers(); ++i)
  	{
 		MissileInProgress[i] = false;
   		L_SAMPlayerPos[i][0] = 0.0;
@@ -294,7 +294,7 @@ public OnFilterScriptExit()
    #endif
   		}
  	}
-	for(new i; i< MAX_PLAYERS; i++)
+	for(new i; i < GetMaxPlayers(); ++i)
  	{
   		if(MissileInProgress[i]) RemovePlayerMapIcon(i, 99);
  	}
@@ -340,7 +340,7 @@ public OnGameModeInit()
   		L_SAMMissileSAMID[i] = -1;
   		L_SAMMissileProgress[i] = -1;
  	}
- 	for(new i; i< MAX_PLAYERS; i++)
+ 	for(new i; i < GetMaxPlayers(); ++i)
  	{
 		MissileInProgress[i] = false;
   		L_SAMPlayerPos[i][0] = 0.0;
@@ -384,7 +384,7 @@ public OnGameModeExit()
    #endif
   		}
  	}
-	for(new i; i< MAX_PLAYERS; i++)
+	for(new i; i < GetMaxPlayers(); ++i)
  	{
   		if(MissileInProgress[i]) RemovePlayerMapIcon(i, 99);
  	}
