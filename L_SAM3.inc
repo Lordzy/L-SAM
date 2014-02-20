@@ -406,28 +406,28 @@ stock AvoidSAMAttacksOnPlayer(playerid, samid)
 {
  	if(L_SAMData[samid][L_SAMCreated] == false) return -1;
  	L_SAM_ExceptionalPlayer[playerid][samid] = true;
- return 1;
+ 	return 1;
 }
 
 stock EnableSAMAttacksOnPlayer(playerid, samid)
 {
  	if(L_SAMData[samid][L_SAMCreated] == false) return -1;
  	L_SAM_ExceptionalPlayer[playerid][samid] = false;
- return 1;
+ 	return 1;
 }
 
 stock ToggleNoSAMAttacksOnPlayer(playerid, samid, bool:noattack)
 {
  	if(L_SAMData[samid][L_SAMCreated] == false) return -1;
  	L_SAM_ExceptionalPlayer[playerid][samid] = noattack;
- return 1;
+ 	return 1;
 }
 
 stock SetSAMMissileSpeed(samid, speed)
 {
  	if(L_SAMData[samid][L_SAMCreated] == false) return 0;
  	L_SAMData[samid][L_SAMSpeed] = speed;
- return 1;
+ 	return 1;
 }
 
 stock GetSAMMissileSpeed(samid)
