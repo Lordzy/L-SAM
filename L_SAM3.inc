@@ -15,7 +15,7 @@ fucked up. But nope, you must define it to use it as a filterscript!
 					Thanks to the person who created randomEx,
 					Thanks to RyDeR` for SetObjectFaceCoords3D function,
  										&
-		   			All the players of YoUnG Generations for Testing this!
+		   			All the playeGetrs of YoUnG Generations for Testing this!
 
 * Happy New Year!
 
@@ -486,7 +486,7 @@ public LordzSAMTimer()
  	{
   		if(L_SAMData[i][L_SAMCreated])
   		{
-   			for(new a; a< GetMaxPlayers(); a++)
+   			for(new a, amax = GetMaxPlayers(); a< amax; a++)
    			{
 				if(!IsPlayerConnected(a)) continue;
 				if(!IsPlayerInRangeOfPoint(a, L_SAMData[i][L_SAMRange], L_SAMData[i][L_SAMX], L_SAMData[i][L_SAMY], L_SAMData[i][L_SAMZ])) continue;
